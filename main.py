@@ -5,5 +5,5 @@ result = model.transcribe("audio.mp3", language="russian")
 
 print(result["text"])
 
-with open("out.txt", 'w', encoding='utf-8') as line:
-    line.append(result["text"])
+with open("out.txt", 'w', encoding='utf-8') as file:
+    file.write(result["text"])
